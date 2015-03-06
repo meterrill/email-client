@@ -7,7 +7,7 @@
 
   <ul>
     {{#each email in model}}
-      <li>{{#link-to 'email' email}}{{email.sender}}{{email.subject}}{{/link-to}}</li>
+      <li>{{#link-to 'email' email}}{{email.sender}} {{email.subject}}{{/link-to}}</li>
     {{/each}}
   </ul>
 </div>
