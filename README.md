@@ -3,7 +3,7 @@ email-client
 
 by Matthew Terrill
 
-email-client was developed to allow a user to create a list of email-client beats and assign reporters to those beats.
+Email-client was developed to allow a user to create and send emails.
 
 
 Installation
