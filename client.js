@@ -1,0 +1,1 @@
+Client = Ember.Application.create();

@@ -1,0 +1,18 @@
+<form>
+  <div class="form-group">
+    <label for="sender">Sender:</label>
+    {{input id="sender" class="form-control" value=sender}}
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    {{input id="subject" class="form-control" value=subject}}
+  </div>
+
+  <div class="form-group">
+    <label for="body">Body:</label>
+    {{textarea id="body" class="form-control" rows="15" value=body}}
+  </div>
+
+  <button class="btn btn-default" {{action 'send'}}>Send</button>
+</form>
