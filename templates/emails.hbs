@@ -1,13 +1,25 @@
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-xs-12">
     <h1>Inbox</h1>
   </div>
+</div>
 
-  <p>{{#link-to 'new-email' classNames="btn btn-default"}}Compose Email{{/link-to}}</p>
+<div class="row">
+  <div class="col-xs-2 email">
+    <ul>
+      <li>Sender</li>
+      {{#each email in model}}
+        <li>{{#link-to 'email' email}}{{email.sender}}{{/link-to}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-  <ul>
-    {{#each email in model}}
-      <li>{{#link-to 'email' email}}{{email.sender}} {{email.subject}}{{/link-to}}</li>
-    {{/each}}
-  </ul>
+  <div class="col-xs-4 email">
+    <ul>
+      <li>Subject</li>
+      {{#each email in model}}
+        <li>{{#link-to 'email' email}}{{email.subject}}{{/link-to}}</li>
+      {{/each}}
+    </ul>
+  </div>
 </div>

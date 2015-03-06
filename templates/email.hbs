@@ -4,5 +4,4 @@
 
 <p>{{body}}</p>
 
-<a {{action "deleteEmail" this}}>Delete</a>
-<p>{{#link-to 'new-email' classNames="btn btn-default"}}Compose Email{{/link-to}}</p>
+<button class="btn btn-default" {{action "deleteEmail" this}}>Delete</button>
